@@ -1,0 +1,18 @@
+{
+    "button": "Bouton",
+    "cancel": "Annuler",
+    "component": "Composant",
+    "create": "Créer",
+    "delete": "Supprimer",
+    "deleteTerm": "Supprimer le Terme",
+    "display": "Affichage",
+    "langText": "Ceci est un test.",
+    "language": "Langue",
+    "languages": "Langues",
+    "multiTest": "Ceci est un test multiligne.\nRegardez.\nJ'ai\nbeaucoup\nbeaucoup\nde lignes",
+    "name": "Nom",
+    "newTerm": "Nouveau Terme...",
+    "ok": "OK",
+    "showAllLog": "Afficher tous les registres",
+    "term": "Terme"
+}

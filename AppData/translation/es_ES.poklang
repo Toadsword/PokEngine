@@ -1,0 +1,18 @@
+{
+    "button": "Botón",
+    "cancel": "Cancelar",
+    "component": "Componente",
+    "create": "Crear",
+    "delete": "Eliminar",
+    "deleteTerm": "Eliminar Término",
+    "display": "Viendo",
+    "langText": "Estoy a mis anchas.",
+    "language": "Idioma",
+    "languages": "Idiomas",
+    "multiTest": "Esta es una prueba multilínea.\nMira.\nYo tengo\nmuchos\nmuchos\nlíneas.",
+    "name": "Nombre",
+    "newTerm": "Nuevo Término...",
+    "ok": "OK",
+    "showAllLog": "Mostrar todos los registros",
+    "term": "Término"
+}

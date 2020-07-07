@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src\PhysicsEngine">
+      <UniqueIdentifier>{7c0b2d11-3df3-4e2f-9a43-3bc95bfda57e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{e7b10809-0691-446e-9fad-286cd73d392f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\PhysicsEngine\Shapes">
+      <UniqueIdentifier>{2941af2c-5823-4be4-8aa7-39ab117a511f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\PhysicsEngine">
+      <UniqueIdentifier>{97cdad1a-37d9-4717-8cef-735223c1da5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{61ab26d5-5cc4-4ab9-bd7f-a2792528268c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\PhysicsEngine\Shapes">
+      <UniqueIdentifier>{6fd2ebfa-98bc-43ed-b40a-973cf4ac9fb3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\PhysicsEngine\aabb.cpp">
+      <Filter>src\PhysicsEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\PhysicsEngine\collider.cpp">
+      <Filter>src\PhysicsEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\PhysicsEngine\physics_engine.cpp">
+      <Filter>src\PhysicsEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\PhysicsEngine\rigidbody.cpp">
+      <Filter>src\PhysicsEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\PhysicsEngine\Shapes\interface_shape.cpp">
+      <Filter>src\PhysicsEngine\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\PhysicsEngine\Shapes\mesh_shape.cpp">
+      <Filter>src\PhysicsEngine\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\PhysicsEngine\Shapes\rect_shape.cpp">
+      <Filter>src\PhysicsEngine\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\PhysicsEngine\Shapes\sphere_shape.cpp">
+      <Filter>src\PhysicsEngine\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\PhysicsEngine\Shapes\box_shape.cpp">
+      <Filter>src\PhysicsEngine\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\PhysicsEngine\Shapes\ellipsoid_shape.cpp">
+      <Filter>src\PhysicsEngine\Shapes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\PhysicsEngine\aabb.h">
+      <Filter>include\PhysicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\PhysicsEngine\collider.h">
+      <Filter>include\PhysicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\PhysicsEngine\collision.h">
+      <Filter>include\PhysicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\PhysicsEngine\physics_engine.h">
+      <Filter>include\PhysicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\PhysicsEngine\rigidbody.h">
+      <Filter>include\PhysicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\PhysicsEngine\Shapes\box_shape.h">
+      <Filter>include\PhysicsEngine\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\PhysicsEngine\Shapes\ellipsoid_shape.h">
+      <Filter>include\PhysicsEngine\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\PhysicsEngine\Shapes\interface_shape.h">
+      <Filter>include\PhysicsEngine\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\PhysicsEngine\Shapes\mesh_shape.h">
+      <Filter>include\PhysicsEngine\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\PhysicsEngine\Shapes\rect_shape.h">
+      <Filter>include\PhysicsEngine\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\PhysicsEngine\Shapes\sphere_shape.h">
+      <Filter>include\PhysicsEngine\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\PhysicsEngine\interface_physics_engine.h">
+      <Filter>include\PhysicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\PhysicsEngine\null_physics_engine.h">
+      <Filter>include\PhysicsEngine</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src\Tests">
+      <UniqueIdentifier>{2b62cd63-b9e4-4c89-8703-d94a822b45b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{cec551b3-0961-4a16-a5f1-ce20b13e774e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Tests\TestEcs">
+      <UniqueIdentifier>{94819993-0eb3-488f-a291-a15b563b35b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Tests\TestNico">
+      <UniqueIdentifier>{9b238fb2-d635-420d-aa6f-cd4a9c660248}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Tests\TestUtilities">
+      <UniqueIdentifier>{325fbde4-0f66-4f6e-9e71-56fd8a684a9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Tests\TestSimon">
+      <UniqueIdentifier>{c3ce3617-8ced-4065-9b3f-9842e0c89112}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Tests\TestEcs">
+      <UniqueIdentifier>{14d15500-2ca4-4488-bcea-099b1cf9b514}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Tests">
+      <UniqueIdentifier>{171e4980-60c5-439e-a95d-1588112cdbd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{717814a8-e0ca-4826-bce3-113f6063c876}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Tests\TestNico">
+      <UniqueIdentifier>{5d25c90e-10cb-4bc2-bc70-73d2b2827668}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PokeTest">
+      <UniqueIdentifier>{c9ce28e8-5fab-45b2-875d-6db4401ed3fe}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\Tests\test_chunks.cpp">
+      <Filter>src\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Tests\test_audio.cpp">
+      <Filter>src\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Tests\test_ecs.cpp">
+      <Filter>src\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Tests\test_inputs.cpp">
+      <Filter>src\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Tests\test_game.cpp">
+      <Filter>src\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Tests\test_nico.cpp">
+      <Filter>src\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Tests\test_physics.cpp">
+      <Filter>src\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Tests\test_prefabs.cpp">
+      <Filter>src\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Tests\test_scenes.cpp">
+      <Filter>src\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Tests\TestEcs\move.cpp">
+      <Filter>src\Tests\TestEcs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Tests\TestNico\test_spline.cpp">
+      <Filter>src\Tests\TestNico</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Tests\TestNico\test_system.cpp">
+      <Filter>src\Tests\TestNico</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Tests\TestUtilities\test_hash.cpp">
+      <Filter>src\Tests\TestUtilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Tests\TestUtilities\test_json.cpp">
+      <Filter>src\Tests\TestUtilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Tests\test_filesystem.cpp">
+      <Filter>src\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Tests\TestSimon\test_player.cpp">
+      <Filter>src\Tests\TestSimon</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\Tests\TestEcs\move.h">
+      <Filter>include\Tests\TestEcs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Tests\TestNico\test_spline.h">
+      <Filter>include\Tests\TestNico</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Tests\TestNico\test_system.h">
+      <Filter>include\Tests\TestNico</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config">
+      <Filter>PokeTest</Filter>
+    </None>
+  </ItemGroup>
+</Project>

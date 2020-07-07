@@ -1,0 +1,17 @@
+{
+    "appType": 1,
+    "availableTools": 8191,
+    "frameRate": 16.65999984741211,
+    "projectName": "pokGame",
+    "sceneSettings": [
+        {
+            "fileName": "Default",
+            "index": 0,
+            "name": "Default"
+        }
+    ],
+    "tagFileName": "tagStarsOfAnarchy.poktag",
+    "windowHeight": 845,
+    "windowName": "POK engine",
+    "windowWidth": 1540
+}

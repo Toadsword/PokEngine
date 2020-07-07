@@ -1,0 +1,17 @@
+{
+    "appType": 2,
+    "availableTools": 80,
+    "frameRate": 16.65999984741211,
+    "projectName": "pokShowroom",
+    "sceneSettings": [
+        {
+            "fileName": "ShowroomScene",
+            "index": 0,
+            "name": "ShowroomScene"
+        }
+    ],
+    "tagFileName": "tagStarsOfAnarchy.poktag",
+    "windowHeight": 640,
+    "windowName": "POK showroom",
+    "windowWidth": 720
+}

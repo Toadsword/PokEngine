@@ -1,0 +1,18 @@
+{
+    "button": "Taste",
+    "cancel": "Stornieren",
+    "component": "Komponente",
+    "create": "Erstellen",
+    "delete": "löschen",
+    "deleteTerm": "Begriff Löschen",
+    "display": "Anzeigen",
+    "langText": "Das ist ein Test.",
+    "language": "Sprache",
+    "languages": "Sprachen",
+    "multiTest": "Dies ist ein mehrzeiliger Test.\nAussehen.\nIch habe\nviele\nviele\nLinien.",
+    "name": "Name",
+    "newTerm": "Neuen Begriff...",
+    "ok": "OK",
+    "showAllLog": "Alle Protokolle anzeigen",
+    "term": "Begriff"
+}

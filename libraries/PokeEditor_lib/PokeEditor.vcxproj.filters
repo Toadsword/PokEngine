@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include\Editor\Tools">
+      <UniqueIdentifier>{e8e563a2-50b8-4a4f-a1dc-c6ca8ccbeb26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Editor">
+      <UniqueIdentifier>{79ab6bd2-6a1c-41d5-b0d0-afc2aa1545aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{e25fdc94-57a5-4e1c-97f6-fb7c3c1401a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Editor\Ecs">
+      <UniqueIdentifier>{c3b6142d-ef31-4141-9756-07682b25f678}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Editor\Components">
+      <UniqueIdentifier>{25377088-029b-4e93-aa63-7c4b2d83e368}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Editor\ResourcesManagers">
+      <UniqueIdentifier>{4703e29c-3dc9-4c58-9f92-d510ec38e6df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Editor\ComponentManagers">
+      <UniqueIdentifier>{50e8b4dc-f130-47ba-a5b0-af39b72a37d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Editor\Tools">
+      <UniqueIdentifier>{bc85b084-dae7-430c-ac87-bd25250aaf18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Editor">
+      <UniqueIdentifier>{be9e12dc-0a1f-46fe-a398-858b17f596ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{615584ab-77a8-4ae2-bde5-c02032d8779a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Editor\Ecs">
+      <UniqueIdentifier>{b2d286ba-aaf1-437f-989e-d1986f1deacc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Editor\ResourcesManagers">
+      <UniqueIdentifier>{f4b0ab71-036b-41bc-bc90-09dd7d85fd18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Editor\ComponentManagers">
+      <UniqueIdentifier>{b2881262-212e-48e1-b9cc-1160f6159294}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Editor\Showroom">
+      <UniqueIdentifier>{61709545-253e-42ae-9302-2b4c4ec8cd15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Editor\Components">
+      <UniqueIdentifier>{8452b74b-effa-48e5-a336-36ff522ca5fe}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\Editor\Tools\convertible_scene_to_pokscene_tool.h">
+      <Filter>include\Editor\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Editor\Tools\component_tool.h">
+      <Filter>include\Editor\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Editor\Tools\tool.h">
+      <Filter>include\Editor\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Editor\Tools\chunk_editor_tool.h">
+      <Filter>include\Editor\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Editor\Ecs\editor_prefab.h">
+      <Filter>include\Editor\Ecs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Editor\Components\editor_component.h">
+      <Filter>include\Editor\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Editor\ResourcesManagers\editor_materials_manager.h">
+      <Filter>include\Editor\ResourcesManagers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Editor\Tools\localization_tool.h">
+      <Filter>include\Editor\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Editor\editor.h">
+      <Filter>include\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Editor\Tools\prefab_creator_tool.h">
+      <Filter>include\Editor\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Editor\Tools\shader_converter_tool.h">
+      <Filter>include\Editor\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Editor\ResourcesManagers\editor_meshes_manager.h">
+      <Filter>include\Editor\ResourcesManagers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Editor\editor_utility.h">
+      <Filter>include\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Editor\ResourcesManagers\resource_managers_container.h">
+      <Filter>include\Editor\ResourcesManagers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Editor\ComponentManagers\editor_component_manager.h">
+      <Filter>include\Editor\ComponentManagers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Editor\imgui_gradient.h">
+      <Filter>include\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Editor\ResourcesManagers\editor_textures_manager.h">
+      <Filter>include\Editor\ResourcesManagers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Editor\gizmo_utility.h">
+      <Filter>include\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Editor\Tools\resource_accessor_tool.h">
+      <Filter>include\Editor\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Editor\Tools\example_tool.h">
+      <Filter>include\Editor\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Editor\Tools\stats_tool.h">
+      <Filter>include\Editor\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Editor\Tools\graphics_controller_tool.h">
+      <Filter>include\Editor\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Editor\Ecs\editor_ecs_manager.h">
+      <Filter>include\Editor\Ecs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Editor\Tools\gizmo_display_tool.h">
+      <Filter>include\Editor\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Editor\component_utility.h">
+      <Filter>include\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Editor\ResourcesManagers\editor_prefabs_manager.h">
+      <Filter>include\Editor\ResourcesManagers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Editor\ResourcesManagers\editor_sounds_manager.h">
+      <Filter>include\Editor\ResourcesManagers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Editor\Tools\resources_viewer.h">
+      <Filter>include\Editor\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Editor\Tools\log_tool.h">
+      <Filter>include\Editor\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Editor\Tools\input_binding_tool.h">
+      <Filter>include\Editor\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Editor\Tools\particle_tool.h">
+      <Filter>include\Editor\Tools</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\Editor\Tools\resource_accessor_tool.cpp">
+      <Filter>src\Editor\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Editor\Tools\input_binding_tool.cpp">
+      <Filter>src\Editor\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Editor\Tools\particle_tool.cpp">
+      <Filter>src\Editor\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Editor\Tools\prefab_creator_tool.cpp">
+      <Filter>src\Editor\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Editor\Tools\gizmo_display_tool.cpp">
+      <Filter>src\Editor\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Editor\Tools\resources_viewer.cpp">
+      <Filter>src\Editor\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Editor\editor.cpp">
+      <Filter>src\Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Editor\gizmo_utility.cpp">
+      <Filter>src\Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Editor\Ecs\editor_prefab.cpp">
+      <Filter>src\Editor\Ecs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Editor\Tools\example_tool.cpp">
+      <Filter>src\Editor\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Editor\ResourcesManagers\editor_prefabs_manager.cpp">
+      <Filter>src\Editor\ResourcesManagers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Editor\imgui_gradient.cpp">
+      <Filter>src\Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Editor\Tools\component_tool.cpp">
+      <Filter>src\Editor\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Editor\ResourcesManagers\editor_materials_manager.cpp">
+      <Filter>src\Editor\ResourcesManagers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Editor\editor_utility.cpp">
+      <Filter>src\Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Editor\Tools\localization_tool.cpp">
+      <Filter>src\Editor\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Editor\ComponentManagers\editor_component_manager.cpp">
+      <Filter>src\Editor\ComponentManagers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Editor\component_utility.cpp">
+      <Filter>src\Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Editor\Tools\shader_converter_tool.cpp">
+      <Filter>src\Editor\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Editor\Tools\convertible_scene_to_pokscene_tool.cpp">
+      <Filter>src\Editor\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Editor\Ecs\editor_ecs_manager.cpp">
+      <Filter>src\Editor\Ecs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Editor\Tools\log_tool.cpp">
+      <Filter>src\Editor\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Editor\Showroom\showroom.cpp">
+      <Filter>src\Editor\Showroom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Editor\Tools\tool.cpp">
+      <Filter>src\Editor\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Editor\Components\editor_component.cpp">
+      <Filter>src\Editor\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Editor\ResourcesManagers\editor_sounds_manager.cpp">
+      <Filter>src\Editor\ResourcesManagers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Editor\ResourcesManagers\editor_textures_manager.cpp">
+      <Filter>src\Editor\ResourcesManagers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Editor\ResourcesManagers\resource_managers_container.cpp">
+      <Filter>src\Editor\ResourcesManagers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Editor\ResourcesManagers\editor_meshes_manager.cpp">
+      <Filter>src\Editor\ResourcesManagers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Editor\Tools\chunk_editor_tool.cpp">
+      <Filter>src\Editor\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Editor\Tools\stats_tool.cpp">
+      <Filter>src\Editor\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Editor\Tools\graphics_controller_tool.cpp">
+      <Filter>src\Editor\Tools</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

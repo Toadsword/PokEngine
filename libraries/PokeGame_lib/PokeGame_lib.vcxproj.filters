@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src\Game\Ecs">
+      <UniqueIdentifier>{ba429032-ee03-4104-8819-9d6c96296340}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Game">
+      <UniqueIdentifier>{e7ce81b7-0768-4dd0-b493-e8660038fa48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{5e6b198d-aa9c-42fa-ad97-db6ef7d5c8b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Game\Systems">
+      <UniqueIdentifier>{19cb33a1-db21-485c-9462-b53b8abe5a80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Game\Components">
+      <UniqueIdentifier>{4c8e5a9b-22d3-44e5-b41c-cba2c2327b11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Game\ResourcesManager\PrefabsManager">
+      <UniqueIdentifier>{88dc6fe0-6c1a-415f-9b27-9dfbf5583550}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Game\ResourcesManager">
+      <UniqueIdentifier>{5a1e329d-1dce-482e-8530-4aa83b1a0c0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Game\ComponentManagers">
+      <UniqueIdentifier>{3937016d-34ad-41b4-8812-573a15805d72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Game\Ecs">
+      <UniqueIdentifier>{c85504f6-af72-4f74-a996-f6eefe8da91d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Game">
+      <UniqueIdentifier>{bee71ad9-20ac-4a92-b61e-0ea8415ab767}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{e0e5699f-9212-487d-ab4a-6a8060877928}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Game\Systems">
+      <UniqueIdentifier>{f3c172ff-1202-40f6-a265-551256a26cd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Game\Components">
+      <UniqueIdentifier>{4382fdd7-323f-46fc-93d3-1fb2a9173a47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Game\ResourcesManager\PrefabsManager">
+      <UniqueIdentifier>{e8aa6e64-d15b-43d2-8d8c-3430e6569486}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Game\ResourcesManager">
+      <UniqueIdentifier>{13b43d67-5e01-4498-b5f2-f429e96f9a2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Game\ComponentManagers">
+      <UniqueIdentifier>{9997bd57-1be4-4567-9434-c14602b71462}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\Game\Ecs\game_archetype.cpp">
+      <Filter>src\Game\Ecs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\Ecs\game_archetypes_manager.cpp">
+      <Filter>src\Game\Ecs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\Ecs\game_prefab.cpp">
+      <Filter>src\Game\Ecs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\Ecs\game_ecs_manager.cpp">
+      <Filter>src\Game\Ecs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\Systems\jiggle_system.cpp">
+      <Filter>src\Game\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\Systems\spline_state_system.cpp">
+      <Filter>src\Game\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\Components\destructible_element.cpp">
+      <Filter>src\Game\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\Components\enemy.cpp">
+      <Filter>src\Game\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\Components\game_camera.cpp">
+      <Filter>src\Game\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\Components\jiggle.cpp">
+      <Filter>src\Game\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\Components\missile.cpp">
+      <Filter>src\Game\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\Components\player.cpp">
+      <Filter>src\Game\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\Components\projectile.cpp">
+      <Filter>src\Game\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\Components\special_attack.cpp">
+      <Filter>src\Game\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\Components\spline_states.cpp">
+      <Filter>src\Game\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\Components\weapon.cpp">
+      <Filter>src\Game\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\ResourcesManager\PrefabsManager\game_prefabs_manager.cpp">
+      <Filter>src\Game\ResourcesManager\PrefabsManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\ResourcesManager\resource_managers_container.cpp">
+      <Filter>src\Game\ResourcesManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\ComponentManagers\destructible_element_manager.cpp">
+      <Filter>src\Game\ComponentManagers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\ComponentManagers\enemies_manager.cpp">
+      <Filter>src\Game\ComponentManagers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\ComponentManagers\game_camera_manager.cpp">
+      <Filter>src\Game\ComponentManagers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\ComponentManagers\jiggle_manager.cpp">
+      <Filter>src\Game\ComponentManagers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\ComponentManagers\missiles_manager.cpp">
+      <Filter>src\Game\ComponentManagers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\ComponentManagers\player_manager.cpp">
+      <Filter>src\Game\ComponentManagers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\ComponentManagers\projectile_manager.cpp">
+      <Filter>src\Game\ComponentManagers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\ComponentManagers\special_attack_manager.cpp">
+      <Filter>src\Game\ComponentManagers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\ComponentManagers\spline_state_manager.cpp">
+      <Filter>src\Game\ComponentManagers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\ComponentManagers\weapon_manager.cpp">
+      <Filter>src\Game\ComponentManagers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\aiming_aid.cpp">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\app_components_managers_container.cpp">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\app_systems_container.cpp">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\demo_system.cpp">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\destructible_element_system.cpp">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\enemies_system.cpp">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\game.cpp">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\game_camera_system.cpp">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\main_menu.cpp">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\missiles_system.cpp">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\player_controller.cpp">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\prefabs_container.cpp">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\projectile_system.cpp">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\special_attack_system.cpp">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\vertical_slice_system.cpp">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Game\weapon_system.cpp">
+      <Filter>src\Game</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\Game\Ecs\game_archetype.h">
+      <Filter>include\Game\Ecs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Game\Ecs\game_archetypes_manager.h">
+      <Filter>include\Game\Ecs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Game\Ecs\game_prefab.h">
+      <Filter>include\Game\Ecs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Game\Ecs\game_ecs_manager.h">
+      <Filter>include\Game\Ecs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Game\Systems\jiggle_system.h">
+      <Filter>include\Game\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Game\Systems\spline_state_system.h">
+      <Filter>include\Game\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Game\Components\destructible_element.h">
+      <Filter>include\Game\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Game\Components\enemy.h">
+      <Filter>include\Game\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Game\Components\game_camera.h">
+      <Filter>include\Game\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Game\Components\jiggle.h">
+      <Filter>include\Game\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Game\Components\missile.h">
+      <Filter>include\Game\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Game\Components\player.h">
+      <Filter>include\Game\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Game\Components\projectile.h">
+      <Filter>include\Game\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Game\Components\special_attack.h">
+      <Filter>include\Game\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Game\Components\spline_states.h">
+      <Filter>include\Game\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Game\Components\weapon.h">
+      <Filter>include\Game\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Game\ResourcesManager\PrefabsManager\game_prefabs_manager.h">
+      <Filter>include\Game\ResourcesManager\PrefabsManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Game\ResourcesManager\resource_managers_container.h">
+      <Filter>include\Game\ResourcesManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Game\ComponentManagers\destructible_element_manager.h">
+      <Filter>include\Game\ComponentManagers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Game\ComponentManagers\enemies_manager.h">
+      <Filter>include\Game\ComponentManagers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Game\ComponentManagers\game_camera_manager.h">
+      <Filter>include\Game\ComponentManagers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Game\ComponentManagers\jiggle_manager.h">
+      <Filter>include\Game\ComponentManagers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Game\ComponentManagers\missiles_manager.h">
+      <Filter>include\Game\ComponentManagers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Game\ComponentManagers\player_manager.h">
+      <Filter>include\Game\ComponentManagers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Game\ComponentManagers\projectile_manager.h">
+      <Filter>include\Game\ComponentManagers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Game\ComponentManagers\special_attack_manager.h">
+      <Filter>include\Game\ComponentManagers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Game\ComponentManagers\spline_state_manager.h">
+      <Filter>include\Game\ComponentManagers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Game\ComponentManagers\weapon_manager.h">
+      <Filter>include\Game\ComponentManagers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Game\aiming_aid.h">
+      <Filter>include\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Game\app_components_managers_container.h">
+      <Filter>include\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Game\app_systems_container.h">
+      <Filter>include\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Game\demo_system.h">
+      <Filter>include\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Game\destructible_element_system.h">
+      <Filter>include\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Game\enemies_system.h">
+      <Filter>include\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Game\game.h">
+      <Filter>include\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Game\game_camera_system.h">
+      <Filter>include\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Game\game_system.h">
+      <Filter>include\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Game\main_menu.h">
+      <Filter>include\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Game\missiles_system.h">
+      <Filter>include\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Game\player_controller.h">
+      <Filter>include\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Game\prefabs_container.h">
+      <Filter>include\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Game\projectile_system.h">
+      <Filter>include\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Game\special_attack_system.h">
+      <Filter>include\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Game\vertical_slice_system.h">
+      <Filter>include\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\Game\weapon_system.h">
+      <Filter>include\Game</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

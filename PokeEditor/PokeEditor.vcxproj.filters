@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="PokEngineEditor">
+      <UniqueIdentifier>{862e9259-ae37-4b8e-ad41-36f5d4f3f574}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>PokEngineEditor</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

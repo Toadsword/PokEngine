@@ -1,0 +1,42 @@
+{
+    "appType": 0,
+    "availableTools": 8191,
+    "frameRate": 16.65999984741211,
+    "projectName": "pokEngine",
+    "sceneSettings": [
+        {
+            "fileName": "Default",
+            "index": 0,
+            "name": "Default"
+        },
+        {
+            "fileName": "MainMenuParsed",
+            "index": 1,
+            "name": "MainMenuParsed"
+        },
+        {
+            "fileName": "VerticalSlice",
+            "index": 2,
+            "name": "VerticalSlice"
+        },
+        {
+            "fileName": "testScenePrefab",
+            "index": 3,
+            "name": "testScenePrefab"
+        },
+        {
+            "fileName": "PrefabCreatorScene",
+            "index": 4,
+            "name": "PrefabCreatorScene"
+        },
+        {
+            "fileName": "Demo",
+            "index": 5,
+            "name": "Demo"
+        }
+    ],
+    "tagFileName": "tagStarsOfAnarchy.poktag",
+    "windowHeight": 845,
+    "windowName": "POK engine",
+    "windowWidth": 1540
+}

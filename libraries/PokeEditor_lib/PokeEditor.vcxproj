@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseNoProfiler|x64">
+      <Configuration>ReleaseNoProfiler</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\Editor\ComponentManagers\editor_component_manager.cpp" />
+    <ClCompile Include="..\..\src\Editor\Components\editor_component.cpp" />
+    <ClCompile Include="..\..\src\Editor\Ecs\editor_prefab.cpp" />
+    <ClCompile Include="..\..\src\Editor\gizmo_utility.cpp" />
+    <ClCompile Include="..\..\src\Editor\imgui_gradient.cpp" />
+    <ClCompile Include="..\..\src\Editor\Tools\chunk_editor_tool.cpp" />
+    <ClCompile Include="..\..\src\Editor\Tools\component_tool.cpp" />
+    <ClCompile Include="..\..\src\Editor\component_utility.cpp" />
+    <ClCompile Include="..\..\src\Editor\Ecs\editor_ecs_manager.cpp" />
+    <ClCompile Include="..\..\src\Editor\editor.cpp" />
+    <ClCompile Include="..\..\src\Editor\editor_utility.cpp" />
+    <ClCompile Include="..\..\src\Editor\Tools\example_tool.cpp" />
+    <ClCompile Include="..\..\src\Editor\Tools\gizmo_display_tool.cpp" />
+    <ClCompile Include="..\..\src\Editor\Tools\graphics_controller_tool.cpp" />
+    <ClCompile Include="..\..\src\Editor\Tools\input_binding_tool.cpp" />
+    <ClCompile Include="..\..\src\Editor\Tools\localization_tool.cpp" />
+    <ClCompile Include="..\..\src\Editor\Tools\log_tool.cpp" />
+    <ClCompile Include="..\..\src\Editor\Tools\particle_tool.cpp" />
+    <ClCompile Include="..\..\src\Editor\Tools\prefab_creator_tool.cpp" />
+    <ClCompile Include="..\..\src\Editor\ResourcesManagers\editor_materials_manager.cpp" />
+    <ClCompile Include="..\..\src\Editor\ResourcesManagers\editor_meshes_manager.cpp" />
+    <ClCompile Include="..\..\src\Editor\ResourcesManagers\editor_prefabs_manager.cpp" />
+    <ClCompile Include="..\..\src\Editor\ResourcesManagers\resource_managers_container.cpp" />
+    <ClCompile Include="..\..\src\Editor\ResourcesManagers\editor_sounds_manager.cpp" />
+    <ClCompile Include="..\..\src\Editor\ResourcesManagers\editor_textures_manager.cpp" />
+    <ClCompile Include="..\..\src\Editor\Tools\resources_viewer.cpp" />
+    <ClCompile Include="..\..\src\Editor\Tools\resource_accessor_tool.cpp" />
+    <ClCompile Include="..\..\src\Editor\Tools\shader_converter_tool.cpp" />
+    <ClCompile Include="..\..\src\Editor\Showroom\showroom.cpp" />
+    <ClCompile Include="..\..\src\Editor\Tools\stats_tool.cpp" />
+    <ClCompile Include="..\..\src\Editor\Tools\tool.cpp" />
+    <ClCompile Include="..\..\src\Editor\Tools\convertible_scene_to_pokscene_tool.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\Editor\ComponentManagers\editor_component_manager.h" />
+    <ClInclude Include="..\..\include\Editor\Components\editor_component.h" />
+    <ClInclude Include="..\..\include\Editor\Ecs\editor_prefab.h" />
+    <ClInclude Include="..\..\include\Editor\gizmo_utility.h" />
+    <ClInclude Include="..\..\include\Editor\imgui_gradient.h" />
+    <ClInclude Include="..\..\include\Editor\Tools\chunk_editor_tool.h" />
+    <ClInclude Include="..\..\include\Editor\Tools\component_tool.h" />
+    <ClInclude Include="..\..\include\Editor\component_utility.h" />
+    <ClInclude Include="..\..\include\Editor\Ecs\editor_ecs_manager.h" />
+    <ClInclude Include="..\..\include\Editor\editor.h" />
+    <ClInclude Include="..\..\include\Editor\editor_utility.h" />
+    <ClInclude Include="..\..\include\Editor\Tools\example_tool.h" />
+    <ClInclude Include="..\..\include\Editor\Tools\gizmo_display_tool.h" />
+    <ClInclude Include="..\..\include\Editor\Tools\graphics_controller_tool.h" />
+    <ClInclude Include="..\..\include\Editor\Tools\input_binding_tool.h" />
+    <ClInclude Include="..\..\include\Editor\Tools\localization_tool.h" />
+    <ClInclude Include="..\..\include\Editor\Tools\log_tool.h" />
+    <ClInclude Include="..\..\include\Editor\Tools\particle_tool.h" />
+    <ClInclude Include="..\..\include\Editor\Tools\prefab_creator_tool.h" />
+    <ClInclude Include="..\..\include\Editor\ResourcesManagers\editor_materials_manager.h" />
+    <ClInclude Include="..\..\include\Editor\ResourcesManagers\editor_meshes_manager.h" />
+    <ClInclude Include="..\..\include\Editor\ResourcesManagers\editor_prefabs_manager.h" />
+    <ClInclude Include="..\..\include\Editor\ResourcesManagers\resource_managers_container.h" />
+    <ClInclude Include="..\..\include\Editor\ResourcesManagers\editor_sounds_manager.h" />
+    <ClInclude Include="..\..\include\Editor\ResourcesManagers\editor_textures_manager.h" />
+    <ClInclude Include="..\..\include\Editor\Tools\resources_viewer.h" />
+    <ClInclude Include="..\..\include\Editor\Tools\resource_accessor_tool.h" />
+    <ClInclude Include="..\..\include\Editor\Tools\shader_converter_tool.h" />
+    <ClInclude Include="..\..\include\Editor\Tools\stats_tool.h" />
+    <ClInclude Include="..\..\include\Editor\Tools\tool.h" />
+    <ClInclude Include="..\..\include\Editor\Tools\convertible_scene_to_pokscene_tool.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{A94BC280-9123-4943-AE4D-99ED83380812}</ProjectGuid>
+    <RootNamespace>PokeEditor</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <ProjectName>PokeEditor_lib</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseNoProfiler|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseNoProfiler|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)build\$(Platform)\$(Configuration)\</OutDir>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <IntDir>build\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)build\$(Platform)\$(Configuration)\</OutDir>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <IntDir>build\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseNoProfiler|x64'">
+    <OutDir>$(SolutionDir)build\$(Platform)\$(Configuration)\</OutDir>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <IntDir>build\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)externals\Utilities;$(SolutionDir)externals\Remotery\lib;$(SolutionDir)externals\SDL2\include;$(SolutionDir)include;$(SolutionDir)externals\imgui\;$(SolutionDir)externals\FMod\inc;$(VK_SDK_PATH)\include</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ShowIncludes>false</ShowIncludes>
+      <PreprocessorDefinitions>_MBCS;X64;_DEBUG;%(PreprocessorDefinitions);PROJECT_NAME="$(ProjectName)";</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>vulkan-1.lib;fmodL_vc.lib;SDL2d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)externals\SDL2\libraries;$(SolutionDir)externals\FMod\lib;$(VK_SDK_PATH)\Lib</AdditionalLibraryDirectories>
+    </Link>
+    <CustomBuildStep>
+      <RootFolder>$(SolutionDir)build
+      </RootFolder>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)externals\Utilities;$(SolutionDir)externals\Remotery\lib;$(SolutionDir)externals\SDL2\include;$(SolutionDir)include;$(SolutionDir)externals\imgui\;$(SolutionDir)externals\FMod\inc;$(VK_SDK_PATH)\include</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PreprocessorDefinitions>_MBCS;X64;NDEBUG;%(PreprocessorDefinitions);PROJECT_NAME="$(ProjectName)";</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>vulkan-1.lib;fmod_vc.lib;SDL2.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)externals\SDL2\libraries;$(SolutionDir)externals\FMod\lib;$(VK_SDK_PATH)\Lib</AdditionalLibraryDirectories>
+    </Link>
+    <CustomBuildStep>
+      <RootFolder>$(SolutionDir)build
+      </RootFolder>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseNoProfiler|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)externals\Utilities;$(SolutionDir)externals\Remotery\lib;$(SolutionDir)externals\SDL2\include;$(SolutionDir)include;$(SolutionDir)externals\imgui\;$(SolutionDir)externals\FMod\inc;$(VK_SDK_PATH)\include</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PreprocessorDefinitions>_MBCS;X64;NDEBUG;NO_PROFILING;%(PreprocessorDefinitions);PROJECT_NAME="$(ProjectName)";</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>vulkan-1.lib;fmod_vc.lib;SDL2.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)externals\SDL2\libraries;$(SolutionDir)externals\FMod\lib;$(VK_SDK_PATH)\Lib</AdditionalLibraryDirectories>
+    </Link>
+    <CustomBuildStep>
+      <RootFolder>$(SolutionDir)build
+      </RootFolder>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

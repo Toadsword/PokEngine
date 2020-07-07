@@ -1,0 +1,573 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseNoProfiler|x64">
+      <Configuration>ReleaseNoProfiler</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\externals\Remotery\lib\Remotery.h" />
+    <ClInclude Include="..\..\externals\Utilities\csv.h" />
+    <ClInclude Include="..\..\externals\Utilities\xxhash.h" />
+    <ClInclude Include="..\..\include\AudioEngine\audio_clip.h" />
+    <ClInclude Include="..\..\include\AudioEngine\audio_engine.h" />
+    <ClInclude Include="..\..\include\AudioEngine\audio_source.h" />
+    <ClInclude Include="..\..\include\AudioEngine\fmod_error_handler.h" />
+    <ClInclude Include="..\..\include\AudioEngine\implementation.h" />
+    <ClInclude Include="..\..\include\AudioEngine\interface_audio_engine.h" />
+    <ClInclude Include="..\..\include\AudioEngine\null_audio_engine.h" />
+    <ClInclude Include="..\..\include\Chunks\chunks.h" />
+    <ClInclude Include="..\..\include\Chunks\chunks_manager.h" />
+    <ClInclude Include="..\..\include\Chunks\interface_chunk_manager.h" />
+    <ClInclude Include="..\..\include\Chunks\null_chunk_manager.h" />
+    <ClInclude Include="..\..\include\CoreEngine\Camera\core_camera.h" />
+    <ClInclude Include="..\..\include\CoreEngine\Camera\interface_camera.h" />
+    <ClInclude Include="..\..\include\CoreEngine\Camera\null_camera.h" />
+    <ClInclude Include="..\..\include\CoreEngine\cassert.h" />
+    <ClInclude Include="..\..\include\CoreEngine\CoreSystems\light_system.h" />
+    <ClInclude Include="..\..\include\CoreEngine\CoreSystems\particles_system.h" />
+    <ClInclude Include="..\..\include\CoreEngine\CoreSystems\segment_renderer_system.h" />
+    <ClInclude Include="..\..\include\CoreEngine\CoreSystems\spline_follower_system.h" />
+    <ClInclude Include="..\..\include\CoreEngine\CoreSystems\audio_system.h" />
+    <ClInclude Include="..\..\include\CoreEngine\CoreSystems\trail_renderer_system.h" />
+    <ClInclude Include="..\..\include\CoreEngine\core_components_managers_container.h" />
+    <ClInclude Include="..\..\include\CoreEngine\CoreSystems\chunks_system.h" />
+    <ClInclude Include="..\..\include\CoreEngine\core_systems_container.h" />
+    <ClInclude Include="..\..\include\CoreEngine\CoreSystems\draw_system.h" />
+    <ClInclude Include="..\..\include\CoreEngine\CoreSystems\phyics_system.h" />
+    <ClInclude Include="..\..\include\CoreEngine\engine.h" />
+    <ClInclude Include="..\..\include\CoreEngine\engine_application.h" />
+    <ClInclude Include="..\..\include\CoreEngine\settings.h" />
+    <ClInclude Include="..\..\include\CoreEngine\module.h" />
+    <ClInclude Include="..\..\include\CoreEngine\module_container.h" />
+    <ClInclude Include="..\..\include\CoreEngine\Observer\subjects_container.h" />
+    <ClInclude Include="..\..\include\CoreEngine\Observer\subject.h" />
+    <ClInclude Include="..\..\include\CoreEngine\ServiceLocator\service_locator.h" />
+    <ClInclude Include="..\..\include\CoreEngine\ServiceLocator\service_locator_definition.h" />
+    <ClInclude Include="..\..\include\CoreEngine\World\interface_world.h" />
+    <ClInclude Include="..\..\include\CoreEngine\World\null_world.h" />
+    <ClInclude Include="..\..\include\CoreEngine\World\world.h" />
+    <ClInclude Include="..\..\include\Ecs\Archetypes\archetype.h" />
+    <ClInclude Include="..\..\include\Ecs\Archetypes\core_archetypes_manager.h" />
+    <ClInclude Include="..\..\include\Ecs\Archetypes\interface_archetypes_manager.h" />
+    <ClInclude Include="..\..\include\Ecs\Archetypes\null_archetypes_manager.h" />
+    <ClInclude Include="..\..\include\Ecs\ComponentManagers\audio_sources_manager.h" />
+    <ClInclude Include="..\..\include\Ecs\ComponentManagers\colliders_manager.h" />
+    <ClInclude Include="..\..\include\Ecs\ComponentManagers\components_managers_container.h" />
+    <ClInclude Include="..\..\include\Ecs\ComponentManagers\interface_components_manager.h" />
+    <ClInclude Include="..\..\include\Ecs\ComponentManagers\lights_manager.h" />
+    <ClInclude Include="..\..\include\Ecs\ComponentManagers\models_manager.h" />
+    <ClInclude Include="..\..\include\Ecs\ComponentManagers\particle_systems_manager.h" />
+    <ClInclude Include="..\..\include\Ecs\ComponentManagers\segment_renderer_manager.h" />
+    <ClInclude Include="..\..\include\Ecs\ComponentManagers\spline_followers_manager.h" />
+    <ClInclude Include="..\..\include\Ecs\ComponentManagers\rigidbody_manager.h" />
+    <ClInclude Include="..\..\include\Ecs\ComponentManagers\trail_renderer_manager.h" />
+    <ClInclude Include="..\..\include\Ecs\ComponentManagers\transforms_manager.h" />
+    <ClInclude Include="..\..\include\Ecs\Components\light.h" />
+    <ClInclude Include="..\..\include\Ecs\Components\segment_renderer.h" />
+    <ClInclude Include="..\..\include\Ecs\Components\spline_follower.h" />
+    <ClInclude Include="..\..\include\Ecs\Components\trail_renderer.h" />
+    <ClInclude Include="..\..\include\Ecs\core_ecs_manager.h" />
+    <ClInclude Include="..\..\include\Ecs\ecs_utility.h" />
+    <ClInclude Include="..\..\include\Ecs\Entities\entity_mask.h" />
+    <ClInclude Include="..\..\include\Ecs\Entities\interface_tag_manager.h" />
+    <ClInclude Include="..\..\include\Ecs\Entities\null_tag_manager.h" />
+    <ClInclude Include="..\..\include\Ecs\Entities\tag_manager.h" />
+    <ClInclude Include="..\..\include\Ecs\interface_ecs_manager.h" />
+    <ClInclude Include="..\..\include\Ecs\null_ecs_manager.h" />
+    <ClInclude Include="..\..\include\Ecs\Prefabs\prefab.h" />
+    <ClInclude Include="..\..\include\Ecs\Prefabs\engine_prefab.h" />
+    <ClInclude Include="..\..\include\Ecs\system.h" />
+    <ClInclude Include="..\..\include\Ecs\Utility\entity_vector.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Buffers\buffer.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Buffers\instance_buffer.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Buffers\push_handle.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Buffers\storage_buffer.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Buffers\storage_handle.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Buffers\uniform_buffer.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Buffers\uniform_handle.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\camera_data.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Commands\command_buffer.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Commands\command_pool.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Descriptors\descriptor_handle.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Descriptors\descriptor_set.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Descriptors\interface_descriptor.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Descriptors\write_descriptor_set.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Devices\instance.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Devices\logical_device.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Devices\physical_device.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Devices\surface.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Devices\window.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Gizmos\gizmo_command_buffer.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Gizmos\gizmo_instances.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\graphic_engine.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Guis\ui_image.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Guis\ui_object.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Guis\ui_transform.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Images\image.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Images\image_2d.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Images\image_cube.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Images\image_depth.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\interface_graphic_engine.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Lights\directional_light.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Lights\light_type.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Lights\light_command_buffer.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Lights\point_light.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Lights\spot_light.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Models\material.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Models\material_export_data.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Models\mesh.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Models\model.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Models\model_command_buffer.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Models\model_instance.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\null_graphic_engine.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Particles\Emitters\emitter.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Particles\Emitters\emitter_circle.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Particles\Emitters\emitter_cone.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Particles\Emitters\emitter_line.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Particles\Emitters\emitter_point.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Particles\Emitters\emitter_sphere.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Particles\emitter_container.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Particles\particle.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Particles\particle_command_buffer.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Particles\particle_instance.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Particles\particle_system.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Pipelines\pipeline.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Pipelines\pipeline_blur.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Pipelines\pipeline_compute.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Pipelines\pipeline_graphic.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Pipelines\pipeline_material.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Pipelines\pipeline_material_manager.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Pipelines\render_pipeline.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Posts\filter_bloom.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Posts\filter_blur.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Posts\filter_default.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Posts\filter_fxaa.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Posts\filter_ripple.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Posts\filter_tone.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Posts\post_filter.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Renderers\renderer.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Renderers\renderer_editor.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Renderers\renderer_game.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Renderpass\framebuffers.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Renderpass\renderpass.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Renderpass\swapchain.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\RenderStage\attachment.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\RenderStage\render_stage.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\RenderStage\subpass_type.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\RenderStage\viewport.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Shaders\shader.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Shaders\shader_attribute.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Shaders\shader_uniform.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Shaders\shader_uniform_block.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Shaders\shader_vertex_input.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Subrenderers\subrenderer_container.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Subrenderers\subrenderer_deferred.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Subrenderers\subrenderer_transparent.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Subrenderers\subrenderer_gizmo.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Subrenderers\subrenderer_imgui.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Subrenderers\subrenderer_opaque.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\Subrenderers\subrenderer_particles.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\vertex_mesh.h" />
+    <ClInclude Include="..\..\include\GraphicsEngine\vulkan_error_handler.h" />
+    <ClInclude Include="..\..\include\Inputs\input_manager.h" />
+    <ClInclude Include="..\..\include\Inputs\interface_input_manager.h" />
+    <ClInclude Include="..\..\include\Inputs\joystick.h" />
+    <ClInclude Include="..\..\include\Inputs\keyboard.h" />
+    <ClInclude Include="..\..\include\Inputs\null_input_manager.h" />
+    <ClInclude Include="..\..\include\Memory\double_frame_buffer.h" />
+    <ClInclude Include="..\..\include\Memory\vector_view.h" />
+    <ClInclude Include="..\..\include\ResourcesManager\MaterialsManager\interface_materials_manager.h" />
+    <ClInclude Include="..\..\include\ResourcesManager\MaterialsManager\core_materials_manager.h" />
+    <ClInclude Include="..\..\include\ResourcesManager\MaterialsManager\material_diffuse.h" />
+    <ClInclude Include="..\..\include\ResourcesManager\MaterialsManager\material_particle.h" />
+    <ClInclude Include="..\..\include\ResourcesManager\MaterialsManager\material_skybox.h" />
+    <ClInclude Include="..\..\include\ResourcesManager\MaterialsManager\material_trail.h" />
+    <ClInclude Include="..\..\include\ResourcesManager\MaterialsManager\null_materials_manager.h" />
+    <ClInclude Include="..\..\include\ResourcesManager\MeshManagers\interface_mesh_manager.h" />
+    <ClInclude Include="..\..\include\ResourcesManager\MeshManagers\mesh_box.h" />
+    <ClInclude Include="..\..\include\ResourcesManager\MeshManagers\mesh_box_gizmo.h" />
+    <ClInclude Include="..\..\include\ResourcesManager\MeshManagers\mesh_line_gizmo.h" />
+    <ClInclude Include="..\..\include\ResourcesManager\MeshManagers\core_mesh_manager.h" />
+    <ClInclude Include="..\..\include\ResourcesManager\MeshManagers\mesh_obj.h" />
+    <ClInclude Include="..\..\include\ResourcesManager\MeshManagers\mesh_plane.h" />
+    <ClInclude Include="..\..\include\ResourcesManager\MeshManagers\mesh_quad.h" />
+    <ClInclude Include="..\..\include\ResourcesManager\MeshManagers\mesh_sphere.h" />
+    <ClInclude Include="..\..\include\ResourcesManager\MeshManagers\mesh_sphere_gizmo.h" />
+    <ClInclude Include="..\..\include\ResourcesManager\MeshManagers\null_mesh_manager.h" />
+    <ClInclude Include="..\..\include\ResourcesManager\PrefabsManager\interface_prefab_manager.h" />
+    <ClInclude Include="..\..\include\ResourcesManager\PrefabsManager\null_prefab_manager.h" />
+    <ClInclude Include="..\..\include\ResourcesManager\PrefabsManager\core_prefab_manager.h" />
+    <ClInclude Include="..\..\include\ResourcesManager\resources_manager_container.h" />
+    <ClInclude Include="..\..\include\ResourcesManager\resource_type.h" />
+    <ClInclude Include="..\..\include\ResourcesManager\SoundsManagers\interface_sounds_manager.h" />
+    <ClInclude Include="..\..\include\ResourcesManager\SoundsManagers\music.h" />
+    <ClInclude Include="..\..\include\ResourcesManager\SoundsManagers\null_sounds_manager.h" />
+    <ClInclude Include="..\..\include\ResourcesManager\SoundsManagers\sound.h" />
+    <ClInclude Include="..\..\include\ResourcesManager\SoundsManagers\core_sounds_manager.h" />
+    <ClInclude Include="..\..\include\ResourcesManager\TextureManagers\interface_texture_manager.h" />
+    <ClInclude Include="..\..\include\ResourcesManager\TextureManagers\null_texture_manager.h" />
+    <ClInclude Include="..\..\include\ResourcesManager\TextureManagers\core_textures_manager.h" />
+    <ClInclude Include="..\..\include\Scenes\scene.h" />
+    <ClInclude Include="..\..\include\Scenes\scene_manager.h" />
+    <ClInclude Include="..\..\include\Scenes\interface_scene_manager.h" />
+    <ClInclude Include="..\..\include\Scenes\null_scene_manager.h" />
+    <ClInclude Include="..\..\include\Utility\chronometer.h" />
+    <ClInclude Include="..\..\include\Utility\color.h" />
+    <ClInclude Include="..\..\include\Utility\color_gradient.h" />
+    <ClInclude Include="..\..\include\Utility\file_system.h" />
+    <ClInclude Include="..\..\include\Utility\future.h" />
+    <ClInclude Include="..\..\include\Utility\json_utility.h" />
+    <ClInclude Include="..\..\include\Utility\log.h" />
+    <ClInclude Include="..\..\include\Utility\profiler.h" />
+    <ClInclude Include="..\..\include\Utility\timer.h" />
+    <ClInclude Include="..\..\include\Utility\time_custom.h" />
+    <ClInclude Include="..\..\include\Utility\worker_thread.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\externals\Remotery\lib\Remotery.c" />
+    <ClCompile Include="..\..\externals\Utilities\xxhash.cpp" />
+    <ClCompile Include="..\..\src\AudioEngine\audio_clip.cpp" />
+    <ClCompile Include="..\..\src\AudioEngine\audio_engine.cpp" />
+    <ClCompile Include="..\..\src\AudioEngine\audio_source.cpp" />
+    <ClCompile Include="..\..\src\AudioEngine\fmod_error_handler.cpp" />
+    <ClCompile Include="..\..\src\AudioEngine\implementation.cpp" />
+    <ClCompile Include="..\..\src\AudioEngine\null_audio_engine.cpp" />
+    <ClCompile Include="..\..\src\Chunks\chunks.cpp" />
+    <ClCompile Include="..\..\src\Chunks\chunks_manager.cpp" />
+    <ClCompile Include="..\..\src\CoreEngine\Camera\core_camera.cpp" />
+    <ClCompile Include="..\..\src\CoreEngine\Camera\null_camera.cpp" />
+    <ClCompile Include="..\..\src\CoreEngine\CoreSystems\light_system.cpp" />
+    <ClCompile Include="..\..\src\CoreEngine\CoreSystems\particles_system.cpp" />
+    <ClCompile Include="..\..\src\CoreEngine\CoreSystems\segment_renderer_system.cpp" />
+    <ClCompile Include="..\..\src\CoreEngine\CoreSystems\spline_follower_system.cpp" />
+    <ClCompile Include="..\..\src\CoreEngine\CoreSystems\audio_system.cpp" />
+    <ClCompile Include="..\..\src\CoreEngine\CoreSystems\trail_renderer_system.cpp" />
+    <ClCompile Include="..\..\src\CoreEngine\core_components_managers_container.cpp" />
+    <ClCompile Include="..\..\src\CoreEngine\CoreSystems\chunks_system.cpp" />
+    <ClCompile Include="..\..\src\CoreEngine\core_systems_container.cpp" />
+    <ClCompile Include="..\..\src\CoreEngine\CoreSystems\draw_system.cpp" />
+    <ClCompile Include="..\..\src\CoreEngine\CoreSystems\phyics_system.cpp" />
+    <ClCompile Include="..\..\src\CoreEngine\engine.cpp" />
+    <ClCompile Include="..\..\src\CoreEngine\engine_application.cpp" />
+    <ClCompile Include="..\..\src\CoreEngine\module.cpp" />
+    <ClCompile Include="..\..\src\CoreEngine\module_container.cpp" />
+    <ClCompile Include="..\..\src\CoreEngine\settings.cpp" />
+    <ClCompile Include="..\..\src\CoreEngine\World\world.cpp" />
+    <ClCompile Include="..\..\src\Ecs\Archetypes\archetype.cpp" />
+    <ClCompile Include="..\..\src\Ecs\Archetypes\core_archetypes_manager.cpp" />
+    <ClCompile Include="..\..\src\Ecs\ComponentManagers\audio_sources_manager.cpp" />
+    <ClCompile Include="..\..\src\Ecs\ComponentManagers\colliders_manager.cpp" />
+    <ClCompile Include="..\..\src\Ecs\ComponentManagers\components_managers_container.cpp" />
+    <ClCompile Include="..\..\src\Ecs\ComponentManagers\lights_manager.cpp" />
+    <ClCompile Include="..\..\src\Ecs\ComponentManagers\models_manager.cpp" />
+    <ClCompile Include="..\..\src\Ecs\ComponentManagers\particle_systems_manager.cpp" />
+    <ClCompile Include="..\..\src\Ecs\ComponentManagers\segment_renderer_manager.cpp" />
+    <ClCompile Include="..\..\src\Ecs\ComponentManagers\spline_followers_manager.cpp" />
+    <ClCompile Include="..\..\src\Ecs\ComponentManagers\rigidbody_manager.cpp" />
+    <ClCompile Include="..\..\src\Ecs\ComponentManagers\trail_renderer_manager.cpp" />
+    <ClCompile Include="..\..\src\Ecs\ComponentManagers\transforms_manager.cpp" />
+    <ClCompile Include="..\..\src\Ecs\Components\light.cpp" />
+    <ClCompile Include="..\..\src\Ecs\Components\segment_renderer.cpp" />
+    <ClCompile Include="..\..\src\Ecs\Components\spline_follower.cpp" />
+    <ClCompile Include="..\..\src\Ecs\Components\trail_renderer.cpp" />
+    <ClCompile Include="..\..\src\Ecs\core_ecs_manager.cpp" />
+    <ClCompile Include="..\..\src\Ecs\Entities\entity_mask.cpp" />
+    <ClCompile Include="..\..\src\Ecs\Entities\tag_manager.cpp" />
+    <ClCompile Include="..\..\src\Ecs\Prefabs\prefab.cpp" />
+    <ClCompile Include="..\..\src\Ecs\Prefabs\engine_prefab.cpp" />
+    <ClCompile Include="..\..\src\Ecs\system.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Buffers\buffer.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Buffers\instance_buffer.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Buffers\push_handle.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Buffers\storage_buffer.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Buffers\storage_handle.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Buffers\uniform_buffer.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Buffers\uniform_handle.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Commands\command_buffer.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Commands\command_pool.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Descriptors\descriptor_handle.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Descriptors\descriptor_set.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Descriptors\write_descriptor_set.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Devices\instance.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Devices\logical_device.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Devices\physical_device.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Devices\surface.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Devices\window.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Gizmos\gizmo_command_buffer.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Gizmos\gizmo_instances.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\graphic_engine.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Guis\ui_image.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Guis\ui_object.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Guis\ui_transform.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Images\image.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Images\image_2d.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Images\image_cube.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Images\image_depth.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Lights\light_command_buffer.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Models\material.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Models\material_export_data.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Models\mesh.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Models\model.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Models\model_command_buffer.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Models\model_instance.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\null_graphic_engine.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Particles\Emitters\emitter.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Particles\Emitters\emitter_circle.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Particles\Emitters\emitter_cone.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Particles\Emitters\emitter_line.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Particles\Emitters\emitter_point.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Particles\Emitters\emitter_sphere.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Particles\emitter_container.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Particles\particle.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Particles\particle_command_buffer.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Particles\particle_instance.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Particles\particle_system.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Pipelines\pipeline_blur.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Pipelines\pipeline_compute.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Pipelines\pipeline_graphic.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Pipelines\pipeline_material.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Pipelines\pipeline_material_manager.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Posts\filter_bloom.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Posts\filter_blur.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Posts\filter_default.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Posts\filter_fxaa.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Posts\filter_ripple.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Posts\filter_tone.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Posts\post_filter.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Renderers\renderer_editor.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Renderers\renderer_game.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Renderpass\framebuffers.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Renderpass\renderpass.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Renderpass\swapchain.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\RenderStage\attachment.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\RenderStage\render_stage.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\RenderStage\subpass_type.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\RenderStage\viewport.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Shaders\shader.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Shaders\shader_attribute.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Shaders\shader_uniform.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Shaders\shader_uniform_block.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Shaders\shader_vertex_input.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Subrenderers\subrenderer_container.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Subrenderers\subrenderer_deferred.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Subrenderers\subrenderer_transparent.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Subrenderers\subrenderer_gizmo.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Subrenderers\subrenderer_imgui.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Subrenderers\subrenderer_opaque.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\Subrenderers\subrenderer_particles.cpp" />
+    <ClCompile Include="..\..\src\GraphicsEngine\vertex_mesh.cpp" />
+    <ClCompile Include="..\..\src\Inputs\input_manager.cpp" />
+    <ClCompile Include="..\..\src\Inputs\joystick.cpp" />
+    <ClCompile Include="..\..\src\Inputs\keyboard.cpp" />
+    <ClCompile Include="..\..\src\Memory\double_frame_buffer.cpp" />
+    <ClCompile Include="..\..\src\ResourcesManager\MaterialsManager\core_materials_manager.cpp" />
+    <ClCompile Include="..\..\src\ResourcesManager\MaterialsManager\material_diffuse.cpp" />
+    <ClCompile Include="..\..\src\ResourcesManager\MaterialsManager\material_particle.cpp" />
+    <ClCompile Include="..\..\src\ResourcesManager\MaterialsManager\material_skybox.cpp" />
+    <ClCompile Include="..\..\src\ResourcesManager\MaterialsManager\material_trail.cpp" />
+    <ClCompile Include="..\..\src\ResourcesManager\MaterialsManager\null_materials_manager.cpp" />
+    <ClCompile Include="..\..\src\ResourcesManager\MeshManagers\mesh_box.cpp" />
+    <ClCompile Include="..\..\src\ResourcesManager\MeshManagers\mesh_box_gizmo.cpp" />
+    <ClCompile Include="..\..\src\ResourcesManager\MeshManagers\mesh_line_gizmo.cpp" />
+    <ClCompile Include="..\..\src\ResourcesManager\MeshManagers\core_mesh_manager.cpp" />
+    <ClCompile Include="..\..\src\ResourcesManager\MeshManagers\mesh_obj.cpp" />
+    <ClCompile Include="..\..\src\ResourcesManager\MeshManagers\mesh_plane.cpp" />
+    <ClCompile Include="..\..\src\ResourcesManager\MeshManagers\mesh_quad.cpp" />
+    <ClCompile Include="..\..\src\ResourcesManager\MeshManagers\mesh_sphere.cpp" />
+    <ClCompile Include="..\..\src\ResourcesManager\MeshManagers\mesh_sphere_gizmo.cpp" />
+    <ClCompile Include="..\..\src\ResourcesManager\PrefabsManager\null_prefab_manager.cpp" />
+    <ClCompile Include="..\..\src\ResourcesManager\PrefabsManager\core_prefab_manager.cpp" />
+    <ClCompile Include="..\..\src\ResourcesManager\resources_manager_container.cpp" />
+    <ClCompile Include="..\..\src\ResourcesManager\SoundsManagers\music.cpp" />
+    <ClCompile Include="..\..\src\ResourcesManager\SoundsManagers\null_sounds_manager.cpp" />
+    <ClCompile Include="..\..\src\ResourcesManager\SoundsManagers\sound.cpp" />
+    <ClCompile Include="..\..\src\ResourcesManager\SoundsManagers\core_sounds_manager.cpp" />
+    <ClCompile Include="..\..\src\ResourcesManager\TextureManagers\core_textures_manager.cpp" />
+    <ClCompile Include="..\..\src\Scenes\scene.cpp" />
+    <ClCompile Include="..\..\src\Scenes\scene_manager.cpp" />
+    <ClCompile Include="..\..\src\Utility\chrono_custom.cpp" />
+    <ClCompile Include="..\..\src\Utility\color.cpp" />
+    <ClCompile Include="..\..\src\Utility\color_gradient.cpp" />
+    <ClCompile Include="..\..\src\Utility\file_system.cpp" />
+    <ClCompile Include="..\..\src\Utility\json_utility.cpp" />
+    <ClCompile Include="..\..\src\Utility\log.cpp" />
+    <ClCompile Include="..\..\src\Utility\profiler.cpp" />
+    <ClCompile Include="..\..\src\Utility\timer.cpp" />
+    <ClCompile Include="..\..\src\Utility\time_custom.cpp" />
+    <ClCompile Include="..\..\src\Utility\worker_thread.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\resources\Shaders\DeferredPbrIbl\brdf.comp" />
+    <None Include="..\..\resources\Shaders\DeferredPbrIbl\deferred.frag" />
+    <None Include="..\..\resources\Shaders\DeferredPbrIbl\deferred.vert" />
+    <None Include="..\..\resources\Shaders\DeferredPbrIbl\irradiance.comp" />
+    <None Include="..\..\resources\Shaders\DeferredPbrIbl\prefiltered.comp" />
+    <None Include="..\..\resources\Shaders\Gizmo\gizmo.frag" />
+    <None Include="..\..\resources\Shaders\Gizmo\gizmo.vert" />
+    <None Include="..\..\resources\Shaders\Particles\particle.frag" />
+    <None Include="..\..\resources\Shaders\Particles\particle.vert" />
+    <None Include="..\..\resources\Shaders\Post\filter_bloom.frag" />
+    <None Include="..\..\resources\Shaders\Post\filter_blur.frag" />
+    <None Include="..\..\resources\Shaders\Post\filter_default.frag" />
+    <None Include="..\..\resources\Shaders\Post\filter_default.vert" />
+    <None Include="..\..\resources\Shaders\Post\filter_fxaa.frag" />
+    <None Include="..\..\resources\Shaders\Post\filter_ripple.frag" />
+    <None Include="..\..\resources\Shaders\Post\filter_tone.frag" />
+    <None Include="..\..\resources\Shaders\Skybox\skybox.frag" />
+    <None Include="..\..\resources\Shaders\Skybox\skybox.vert" />
+    <None Include="..\..\resources\Shaders\Standard\diffuse_t.frag" />
+    <None Include="..\..\resources\Shaders\Standard\diffuse_t_bc.frag" />
+    <None Include="..\..\resources\Shaders\Standard\diffuse_t_bc_n.frag" />
+    <None Include="..\..\resources\Shaders\Standard\diffuse_t_bc_n_rma.frag" />
+    <None Include="..\..\resources\Shaders\Standard\diffuse_t_bc_rma.frag" />
+    <None Include="..\..\resources\Shaders\Standard\diffuse_bc_rma.frag" />
+    <None Include="..\..\resources\Shaders\Standard\diffuse_t_n.frag" />
+    <None Include="..\..\resources\Shaders\Standard\diffuse_t_n_rma.frag" />
+    <None Include="..\..\resources\Shaders\Standard\diffuse_t_rma .frag" />
+    <None Include="..\..\resources\Shaders\Standard\diffuse_rma.frag" />
+    <None Include="..\..\resources\Shaders\Standard\diffuse_n.frag" />
+    <None Include="..\..\resources\Shaders\Standard\diffuse_n_rma.frag" />
+    <None Include="..\..\resources\Shaders\Standard\diffuse.frag" />
+    <None Include="..\..\resources\Shaders\Standard\diffuse_bc_n.frag" />
+    <None Include="..\..\resources\Shaders\Standard\diffuse_bc.frag" />
+    <None Include="..\..\resources\Shaders\Standard\diffuse_bc_n_rma.frag" />
+    <None Include="..\..\resources\Shaders\Standard\diffuse.vert" />
+    <None Include="..\..\resources\Shaders\Trail\trail.frag" />
+    <None Include="..\..\resources\Shaders\Trail\trail.vert" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{41B8CADD-303D-4823-AA6E-875C4221B4AC}</ProjectGuid>
+    <RootNamespace>PokeCommon</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <ProjectName>PokeCommon_lib</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseNoProfiler|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseNoProfiler|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)build\$(Platform)\$(Configuration)\</OutDir>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <IntDir>build\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)build\$(Platform)\$(Configuration)\</OutDir>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <IntDir>build\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseNoProfiler|x64'">
+    <OutDir>$(SolutionDir)build\$(Platform)\$(Configuration)\</OutDir>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <IntDir>build\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)externals\Utilities;$(SolutionDir)externals\Remotery\lib;$(SolutionDir)externals\SDL2\include;$(SolutionDir)include;$(SolutionDir)externals\imgui\;$(SolutionDir)externals\FMod\inc;$(VK_SDK_PATH)\include</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ShowIncludes>false</ShowIncludes>
+      <PreprocessorDefinitions>_MBCS;X64;_DEBUG;%(PreprocessorDefinitions);PROJECT_NAME="$(ProjectName)";</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>vulkan-1.lib;fmodL_vc.lib;SDL2d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)externals\SDL2\libraries;$(SolutionDir)externals\FMod\lib;$(VK_SDK_PATH)\Lib</AdditionalLibraryDirectories>
+    </Link>
+    <CustomBuildStep>
+      <RootFolder>$(SolutionDir)build</RootFolder>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)externals\Utilities;$(SolutionDir)externals\Remotery\lib;$(SolutionDir)externals\SDL2\include;$(SolutionDir)include;$(SolutionDir)externals\imgui\;$(SolutionDir)externals\FMod\inc;$(VK_SDK_PATH)\include</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PreprocessorDefinitions>_MBCS;X64;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>vulkan-1.lib;fmod_vc.lib;SDL2.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)externals\SDL2\libraries;$(SolutionDir)externals\FMod\lib;$(VK_SDK_PATH)\Lib</AdditionalLibraryDirectories>
+    </Link>
+    <CustomBuildStep>
+      <RootFolder>$(SolutionDir)build</RootFolder>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseNoProfiler|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)externals\Utilities;$(SolutionDir)externals\Remotery\lib;$(SolutionDir)externals\SDL2\include;$(SolutionDir)include;$(SolutionDir)externals\imgui\;$(SolutionDir)externals\FMod\inc;$(VK_SDK_PATH)\include</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PreprocessorDefinitions>_MBCS;X64;NDEBUG;NO_PROFILING;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>vulkan-1.lib;fmod_vc.lib;SDL2.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)externals\SDL2\libraries;$(SolutionDir)externals\FMod\lib;$(VK_SDK_PATH)\Lib</AdditionalLibraryDirectories>
+    </Link>
+    <CustomBuildStep>
+      <RootFolder>$(SolutionDir)build
+      </RootFolder>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

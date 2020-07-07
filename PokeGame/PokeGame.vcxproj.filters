@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="PokEngineGame">
+      <UniqueIdentifier>{07f8e09b-1b4b-470b-b248-a8852f1431cd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>PokEngineGame</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

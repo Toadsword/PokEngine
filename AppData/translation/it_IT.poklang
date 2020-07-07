@@ -1,0 +1,18 @@
+{
+    "button": "Pulsante",
+    "cancel": "Annulla",
+    "component": "Componente",
+    "create": "Creare",
+    "delete": "Elimina",
+    "deleteTerm": "Elimina Termine",
+    "display": "Vista",
+    "langText": "Questo è un test.",
+    "language": "Linguaggio",
+    "languages": "Linguaggi",
+    "multiTest": "Questo è un test multilinea.\nGuarda.\nIo ho\nmolti\nmolti\nLinee.",
+    "name": "Nome",
+    "newTerm": "Nuovo Termine...",
+    "ok": "OK",
+    "showAllLog": "Mostra tutti i registri",
+    "term": "Termine"
+}

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="externals\googletest\include\benchmark">
+      <UniqueIdentifier>{83209fe9-b526-4d6d-84db-e224ed2bfcda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="externals\googletest\include">
+      <UniqueIdentifier>{9e428027-9986-402f-a275-afc55c387c47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="externals\googletest">
+      <UniqueIdentifier>{a1901e8c-eb8b-4a64-a7f2-eb224da86b16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="externals">
+      <UniqueIdentifier>{f1174625-7203-4bf2-813f-74c97462118e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PokeBenchmark">
+      <UniqueIdentifier>{cb47b70e-86c6-4ed5-9c3d-c786d9811443}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Tests\Benchmarks">
+      <UniqueIdentifier>{e1099a03-c8b6-4866-b804-2f8a3d49a62e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Tests">
+      <UniqueIdentifier>{766c4446-29f7-481e-be46-fe932d05017f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{7bba3578-e731-4beb-a072-9103f37c4fa3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\externals\googletest\include\benchmark\benchmark.h">
+      <Filter>externals\googletest\include\benchmark</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config">
+      <Filter>PokeBenchmark</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\Tests\Benchmarks\test_benchmark.cpp">
+      <Filter>src\Tests\Benchmarks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Tests\Benchmarks\benchmark_entity_vector.cpp">
+      <Filter>src\Tests\Benchmarks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Tests\Benchmarks\benchmark_vector_view.cpp">
+      <Filter>src\Tests\Benchmarks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Tests\Benchmarks\benchmark_distance_vector_sort.cpp">
+      <Filter>src\Tests\Benchmarks</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,18 @@
+{
+    "button": "Button",
+    "cancel": "Cancel",
+    "component": "Component",
+    "create": "Create",
+    "delete": "Delete",
+    "deleteTerm": "Delete Term",
+    "display": "Display",
+    "langText": "This is a test.",
+    "language": "Language",
+    "languages": "Languages",
+    "multiTest": "This is a multiline test.\nLook.\nI have\nmany\nmany\nlines.",
+    "name": "Name",
+    "newTerm": "New Term...",
+    "ok": "OK",
+    "showAllLog": "Show all logs",
+    "term": "Term"
+}

@@ -1,0 +1,68 @@
+[
+    {
+        "Actions": 0,
+        "ControllerInput": 11,
+        "PcInput": 26,
+        "SwitchInput": 0
+    },
+    {
+        "Actions": 1,
+        "ControllerInput": 11,
+        "PcInput": 22,
+        "SwitchInput": 1
+    },
+    {
+        "Actions": 2,
+        "ControllerInput": 10,
+        "PcInput": 4,
+        "SwitchInput": 2
+    },
+    {
+        "Actions": 3,
+        "ControllerInput": 10,
+        "PcInput": 7,
+        "SwitchInput": 3
+    },
+    {
+        "Actions": 4,
+        "ControllerInput": 0,
+        "PcInput": 225,
+        "SwitchInput": 4
+    },
+    {
+        "Actions": 5,
+        "ControllerInput": 17,
+        "PcInput": 282,
+        "SwitchInput": 11
+    },
+    {
+        "Actions": 6,
+        "ControllerInput": 5,
+        "PcInput": 283,
+        "SwitchInput": 9
+    },
+    {
+        "Actions": 7,
+        "ControllerInput": 5,
+        "PcInput": 283,
+        "SwitchInput": 9
+    },
+    {
+        "Actions": 8,
+        "ControllerInput": 17,
+        "PcInput": 283,
+        "SwitchInput": 11
+    },
+    {
+        "Actions": 9,
+        "ControllerInput": 1,
+        "PcInput": 283,
+        "SwitchInput": 5
+    },
+    {
+        "Actions": 9,
+        "ControllerInput": 2,
+        "PcInput": 44,
+        "SwitchInput": 4
+    }
+]
